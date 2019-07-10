@@ -1,4 +1,4 @@
-#Fripolisekalkulator
+# Fripolisekalkulator
 Finansportalen.no's calculation module for Fripolisekalkulator.
 
 # Maven

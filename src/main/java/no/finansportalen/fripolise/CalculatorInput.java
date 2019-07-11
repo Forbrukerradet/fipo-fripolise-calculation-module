@@ -16,6 +16,30 @@ public class CalculatorInput {
     private double[] interestRates;
     private double calculationTime;
     
+    /**
+     * Parameters marked with NOK represent an amount in norwegian krones. Use only whole krones, don't subdivide
+     * @param arligSikretAlderspensjon guaranteed yearly benefit, NOK
+     * @param kjonn biological sex of the person
+     * @param fodselsdato date of birth of the person
+     * @param utbetalingStopperAlder age of the person at which the pension benefits will stop being paid out.
+     * @param garantertRente guaranteed yield of the pension plan.
+     *                       For example, for 2.50% supply value of 0.0250, for 3.33% supply value of 0.0333
+     * @param premiereserve premium reserve, NOK
+     * @param tilleggsavsetninger additional provisions, NOK
+     * @param kursreserve unrealized gains, NOK
+     * @param selskap company
+     * @param interestRates an array of interest rates, expected size is 151 elements
+     *                      Rates are provided by EIOPA and are updated on a monthly basis.
+     *                      Available from https://eiopa.europa.eu/regulation-supervision/insurance/solvency-ii-technical-information/risk-free-interest-rate-term-structures
+     *                      File containing interest rates: "EIOPA_RFR_20180731_Term_Structures.xlsx"
+     *                      Rates are in "Basic RFR curves NO volatility adjustment" sheet
+     *                      The first element of the array must be zero, the rest are values provided for EIOPA
+     *
+     * @param eiopaPublishDate date of the file for used interest rates.
+     *                         See corresponding file for date: "Notes on the Production of the risk-free Term Structures as of dd.MM.yyyy"
+     *                         Format is unix time in milliseconds.
+     * @throws FripoliseCalculationModuleException
+     */
     public CalculatorInput(
             double arligSikretAlderspensjon,
             Sex kjonn,

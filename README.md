@@ -26,3 +26,6 @@ To include `fripolise-calculation-module` library to your Maven project:
         <version>1.0.0</version>
     </dependency>
     ```
+# Tests
+Tests require a Java Scripting API compliant JS engine. Current setup uses Nashorn which is packageg with JDK. 
+When using Nashorn, use JDK versions 1.8.0_77 and up.

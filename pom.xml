@@ -6,7 +6,7 @@
 
     <groupId>no.finansportalen</groupId>
     <artifactId>fipo-fripolise-calculation-module</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <distributionManagement>

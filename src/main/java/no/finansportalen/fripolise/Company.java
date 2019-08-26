@@ -4,7 +4,7 @@ public enum Company {
     DNB("DNB"),
     STOREBRAND("Storebrand"),
     NORDEA_LIV("Nordea Liv"),
-    SPAREBANK("Sparebank"),
+    SPAREBANK("Sparebank 1"),
     GJENSIDIGE_PENSJON("Gjensidige Pensjon"),
     KLP_BEDRIFTSPENSJON("KLP Bedriftspensjon");
     

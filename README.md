@@ -1,6 +1,9 @@
 # Fripolisekalkulator
-Finansportalen.no's calculation module for Fripolisekalkulator.
+Finansportalen.no's calculation module for Fripolisekalkulator.  
 https://www.finansportalen.no/pensjon/fripolisekalkulator/
+
+For any questions related this code [contact Finansportalen](https://www.finansportalen.no/andre-valg/kontaktskjema).
+
 
 # Maven
 To include `fripolise-calculation-module` library to your Maven project:

@@ -27,7 +27,7 @@ To include `fripolise-calculation-module` library to your Maven project:
     <dependency>
         <groupId>no.finansportalen</groupId>
         <artifactId>fripolise-calculation-module</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
     </dependency>
     ```
 # Tests

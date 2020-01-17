@@ -1,11 +1,11 @@
 package no.finansportalen.fripolise;
 
 import jdk.nashorn.api.scripting.ScriptObjectMirror;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.ResourceUtils;
 
 import javax.script.ScriptEngine;
@@ -18,9 +18,8 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class FripoliseCalculatorJavaScriptTest extends FripoliseCalculatorTest {
-    
-    private static final Logger log = LoggerFactory.getLogger(FripoliseCalculatorJavaScriptTest.class);
-    
+
+    private static final Logger log = LogManager.getLogger(FripoliseCalculatorJavaScriptTest.class);
     
     ScriptEngine engine;
     

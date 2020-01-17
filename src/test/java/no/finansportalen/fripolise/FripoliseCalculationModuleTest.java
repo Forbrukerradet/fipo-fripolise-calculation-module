@@ -1,10 +1,10 @@
 package no.finansportalen.fripolise;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.ResourceUtils;
 
 import java.io.*;
@@ -17,9 +17,9 @@ import static org.junit.Assert.assertFalse;
 
 
 public class FripoliseCalculationModuleTest extends FripoliseCalculatorTest {
-    
-    private static final Logger log = LoggerFactory.getLogger(FripoliseCalculationModuleTest.class);
-    
+
+    private static final Logger log = LogManager.getLogger(FripoliseCalculationModuleTest.class);
+
     private static final double maxAcceptableRelativeErrorDiff = 0.00000000001D;
     
     @Test

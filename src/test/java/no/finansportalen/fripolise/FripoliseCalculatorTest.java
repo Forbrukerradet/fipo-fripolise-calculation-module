@@ -1,10 +1,10 @@
 package no.finansportalen.fripolise;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.junit.Before;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.ResourceUtils;
 
 import java.io.*;
@@ -19,8 +19,8 @@ import static org.junit.Assert.assertEquals;
 public abstract class FripoliseCalculatorTest {
     
     FripoliseCalculationModule calculationModule;
-    
-    private static final Logger log = LoggerFactory.getLogger(FripoliseCalculatorTest.class);
+
+    private static final Logger log = LogManager.getLogger(FripoliseCalculatorTest.class);
     
     static final int EXPECTED_INTEREST_RATE_ARRAY_SIZE_WITHOUT_LEADING_ZERO = 150;
     

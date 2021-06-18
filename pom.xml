@@ -9,6 +9,23 @@
     <version>1.0.2</version>
     <packaging>jar</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Finansportalen.no's calculation module for Fripolisekalkulator.</description>
+    <url>https://www.finansportalen.no/pensjon/fripolisekalkulator/</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/Forbrukerradet/fipo-fripolise-calculation-module/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/Forbrukerradet/fipo-fripolise-calculation-module.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Forbrukerradet/fipo-fripolise-calculation-module.git</developerConnection>
+        <url>https://github.com/Forbrukerradet/fipo-fripolise-calculation-module/tree/master</url>
+    </scm>
+
     <distributionManagement>
         <repository>
             <id>internal.repo</id>
@@ -116,6 +133,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>

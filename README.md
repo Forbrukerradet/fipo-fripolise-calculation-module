@@ -13,7 +13,7 @@ To include the library to your Maven project. Add a dependency:
   <dependency>
     <groupId>no.finansportalen</groupId>
     <artifactId>fipo-fripolise-calculation-module</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
   </dependency>
   ```
 
